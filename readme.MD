@@ -19,3 +19,5 @@ TODO:
 | level03  | kooda2puivaav1idi4f57q8iq |
 | level04  | qi0maab88jeaj46qoumi7maus |
 | level05  | ne2searoevaevoem4ov4ar8ap |
+| level06  | viuaaale9huek52boumoomioc |
+| level07  | wiok45aaoguiboiki2tuin6ub |
