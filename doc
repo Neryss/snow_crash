@@ -1,0 +1,70 @@
+################  0  ################
+
+cat /usr/sbin/john --> cdiiddwpgswtgt
+
+https://www.dcode.fr/chiffre-cesar
+
+paswd = nottoohardhere
+
+token = x24ti5gi3x0ol2eh4esiuxias
+
+################  1  ################
+
+
+cat /etc/passwd
+
+flag01:42hDRfypTqqnw:3001:3001::/home/flag/flag01:/bin/bash
+
+42hDRfypTqqnw
+
+use john mais chez toi fdp car c'est trop dur de nous donner les outils pour bosser
+
+echo 42hDRfypTqqnw > mdp
+
+john mdp
+
+mdp = abcdefg
+
+token = f2av5il02puano7naaf6adaaf
+
+
+################  2  ################
+
+scp -P 4242 level02@10.12.200.63:level02.pcap .
+
+send the file to this site -> https://app.packetsafari.com/analyze/l/JCDRHYoBxSZFwhMAKj5X/none/none
+
+analyse packets send we find : ft_waNDReL0L (watchout for delete : 7f !)
+
+mdp = ft_waNDReL0L
+
+token = kooda2puivaav1idi4f57q8iq
+
+################  3  ################
+
+scp -P 4242 level02@10.12.200.63:level03 .
+
+################  NOTES  ################
+
+in /var/spool/mail il y a : */2 * * * * su -c "sh /usr/sbin/openarenaserver" - flag05
+
+/var/www il y a : level4 et level12
+
+user whoopsie ???
+
+6823fefc9927f892dd7a012623dbbd29-2:
+
+
+Utile :
+
+find / -user flag00 2> /dev/null  --> chercher tout fichier owned par un user
+find / -type f/d -user flag00 2> /dev/null  --> chercher un fichier owned par un user et par type
+find / -type f/d -group flag00 2> /dev/null  --> chercher un fichier owned par un group et par type
+find / -type f/d -perm flag00 2> /dev/null  --> chercher un fichier par droit
+find / -iname <filename> 2> /dev/null --> chercher un fichier par un nom
+
+find /-type f -exec bash -c 'test -r "$1" && echo "$1"' x {} \; 2> /dev/null --> tt les fichier readble par l'user 
+
+find
+groups
+cat /etc/group
