@@ -1,6 +1,10 @@
 # Snow-crash
 An introduction to admin sys security
 
+## Iso
+
+- [snow-crash.iso](https://files.neryss.pw/random/snow-crash.iso)
+
 TODO: 
 - Add a global dockerfile for several tests
 - Add articles sources?
