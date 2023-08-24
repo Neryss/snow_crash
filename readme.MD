@@ -18,3 +18,4 @@ TODO:
 | level02  | f2av5il02puano7naaf6adaaf |
 | level03  | kooda2puivaav1idi4f57q8iq |
 | level04  | qi0maab88jeaj46qoumi7maus |
+| level05  | ne2searoevaevoem4ov4ar8ap |
