@@ -1,6 +1,12 @@
 # Snow-crash
 An introduction to admin sys security
 
+## Virtual Box Settings
+
+- You should add a network adapter with DHCP enabled
+- Set your vm network settings to bridge adapter
+- Debian 64 bit
+
 ## Iso
 
 - [snow-crash.iso](https://files.neryss.pw/random/snow-crash.iso)
