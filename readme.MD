@@ -19,7 +19,7 @@ TODO:
 
 | Level    | Password                  |
 |----------|---------------------------|
-| level00  | flag00                    |
+| level00  | level00                   |
 | level01  | x24ti5gi3x0ol2eh4esiuxias |
 | level02  | f2av5il02puano7naaf6adaaf |
 | level03  | kooda2puivaav1idi4f57q8iq |
