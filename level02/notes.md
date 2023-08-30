@@ -18,3 +18,7 @@ f t _ w a n d r [del] [del] [del] N D R e l [del] L 0 L
 ## Password
 
 `ft_waNDReL0L`
+
+## Token
+
+kooda2puivaav1idi4f57q8iq

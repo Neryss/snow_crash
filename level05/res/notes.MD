@@ -31,3 +31,7 @@ We can find the flag here:
 cat /tmp/done
 Check flag.Here is your token : viuaaale9huek52boumoomioc
 ```
+
+## Token
+
+viuaaale9huek52boumoomioc

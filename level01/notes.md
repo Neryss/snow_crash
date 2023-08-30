@@ -34,3 +34,7 @@ Session completed.
 ```
 
 We get a result fairly quickly: `abcdefg`
+
+## Token
+
+f2av5il02puano7naaf6adaaf

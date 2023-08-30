@@ -25,6 +25,6 @@ PHP Notice:  Undefined variable: Check flag.Here is your token : wiok45aaoguiboi
 
 Placing `echo '[x {${exec(getflag)}}]` will break and the double `{{}}` will get the return of the getflag function.
 
-## Password
+## Token
 
 wiok45aaoguiboiki2tuin6ub

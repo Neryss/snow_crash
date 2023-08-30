@@ -22,3 +22,7 @@ cdiiddwpgswtgt
 
 After decoding it with a caesar cupher (key 15)
 `nottoohardhere`
+
+## Token
+
+x24ti5gi3x0ol2eh4esiuxias
