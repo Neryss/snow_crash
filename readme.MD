@@ -6,6 +6,7 @@ An introduction to admin sys security
 - You should add a network adapter with DHCP enabled
 - Set your vm network settings to bridge adapter
 - Debian 64 bit
+- Don't boot on the iso for now, launch the vm normally then put the iso when the vm asks so
 
 ## Iso
 
