@@ -6,7 +6,7 @@ Obviously we can't read token, and we can execute `level10` passing it a file an
 
 As we can see in the [decompiled level10](./level10_decomp.c), it sends the content of the file we pass to the ip address through a socket.
 
-We can use `nc` to capture this traffic. More specificaly, we can use `nc -l -k <ip>` so that it keeps the connection alive while we spam it.
+We can use `nc` to capture this traffic. More specificaly, we can use `nc -l -k <ip> <port>` so that it keeps the connection alive while we spam it.
 
 ## Exploit
 
@@ -53,7 +53,7 @@ done
 It's simply bruteforcing and we can see the result on nc when we launch both scripts:
 
 ```bash
-~/Documents/42/snow_crash/level10/res (main*) » nc -l -k 10.14.6.1
+~/Documents/42/snow_crash/level10/res (main*) » nc -l -k 10.14.6.1 6969
 .*( )*.
 .*( )*.
 .*( )*.
