@@ -12,9 +12,10 @@ An introduction to admin sys security
 
 - [snow-crash.iso](https://files.neryss.pw/random/snow-crash.iso)
 
-TODO: 
-- Add a global dockerfile for several tests
-- Add articles sources?
+## Useful tools
+
+- [wireshark](https://www.wireshark.org/): for network analyze
+- [cutter.re](https://cutter.re/): free decompiler
 
 ## List of levels and passwords
 
