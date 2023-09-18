@@ -77,7 +77,7 @@ level13@SnowCrash:/var/crash$ cat inject.c
 
 __uid_t getuid()
 {
-        return (4242);
+    return (4242);
 }
 
 level13@SnowCrash:/var/crash$ gcc -shared -fPIC /var/crash/inject.c -o /var/crash/inject.o
