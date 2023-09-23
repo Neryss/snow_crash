@@ -17,6 +17,20 @@ An introduction to admin sys security
 - [wireshark](https://www.wireshark.org/): for network analyze
 - [cutter.re](https://cutter.re/): free decompiler
 
+# Useful notes
+
+First and foremost, this project is interesting but it can be sometimes tricky and not really well guided. You might feel lost but I assure you, you don't want to get the solution spoiled.
+
+We did our best to try and write notes that won't spoil everything, they are separated by this kind of schema : Discoveries -> Exploit -> Token.
+
+You can check the discovery parts if you feel like you've missed something or even the resources to have a comparative, but you should really not check the exploits without finding them or at least having a trail.
+
+Else you're literaly cheating yourself and this project will suck.
+
+If you need advices that you don't find on this repo, you can contact me on slack (ckurt) or on the [intra](https://profile.intra.42.fr/users/ckurt).
+
+Happy hunting! 
+
 ## List of levels and passwords
 
 | Level    | Password                                |
@@ -31,6 +45,9 @@ An introduction to admin sys security
 | level07  | wiok45aaoguiboiki2tuin6ub               |
 | level08  | fiumuikeil55xe9cu4dood66h               |
 | level09  | 25749xKZ8L7DkSCwJkT9dyv6f               |
+
+| Bonuses  | Password                                |
+|----------|-----------------------------------------|
 | level10  | s5cAJpM8ev6XHw998pRWG728z               |
 | level11  | feulo4b72j7edeahuete3no7c               |
 | level12  | fa6v5ateaw21peobuub8ipe6s               |
