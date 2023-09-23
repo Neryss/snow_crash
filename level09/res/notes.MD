@@ -1,10 +1,12 @@
-## BONUS Level09
+## BONUS: Level09
 
 We can find a `level09` that we decompiled [here](./level09_decomp.c) but it's not really useful to take a look at it as the strings output tell us so gently "You should not reverse this".
 
 What the executable does is quite straight forward, it rot the arguments of the index of the letter for example `aaaa` becomes `abcde`.
 
 There is also a [token](./test.txt) (it's the output of the cat of `token`). We just created a simple program that does the same as the base executable but in reverse and pass the token output to it:
+
+## Crafting our program
 
 ```cpp
 #include <iostream>

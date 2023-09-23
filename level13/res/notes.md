@@ -1,4 +1,4 @@
-## Level 13
+## BONUS: Level 13
 
 We can find a [level13](./level13) file asking us for a specific UID (4242).
 
@@ -7,6 +7,8 @@ We have several ways to tackle this exploit:
 ### GDB
 
 We can use GDB to modify the `cmp` call as such:
+
+Notes: ">" represent interesting calls/lines etc
 
 ```bash
 /42/snow_crash/level13/res (main*) » gdb -q ./level13
@@ -19,7 +21,7 @@ Dump of assembler code for function main:
    0x0804858f <+3>:     and    $0xfffffff0,%esp
    0x08048592 <+6>:     sub    $0x10,%esp
    0x08048595 <+9>:     call   0x8048380 <getuid@plt>
-   0x0804859a <+14>:    cmp    $0x1092,%eax
+>  0x0804859a <+14>:    cmp    $0x1092,%eax
    0x0804859f <+19>:    je     0x80485cb <main+63>
    0x080485a1 <+21>:    call   0x8048380 <getuid@plt>
    0x080485a6 <+26>:    mov    $0x80486c8,%edx
@@ -30,7 +32,7 @@ Dump of assembler code for function main:
    0x080485bf <+51>:    movl   $0x1,(%esp)
    0x080485c6 <+58>:    call   0x80483a0 <exit@plt>
    0x080485cb <+63>:    movl   $0x80486ef,(%esp)
-   0x080485d2 <+70>:    call   0x8048474 <ft_des>
+>  0x080485d2 <+70>:    call   0x8048474 <ft_des>
    0x080485d7 <+75>:    mov    $0x8048709,%edx
    0x080485dc <+80>:    mov    %eax,0x4(%esp)
    0x080485e0 <+84>:    mov    %edx,(%esp)
@@ -70,6 +72,8 @@ your token is 2A31L79asukciNyi8uppkEuSx
 ```
 
 ### Preload
+
+Another solution which is also really powerful, is to forge our own `getuid()` function and use it to replace the one in the main program as such:
 
 ```bash
 level13@SnowCrash:/var/crash$ cat inject.c

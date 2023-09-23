@@ -17,6 +17,8 @@ int32_t main(int32_t argc, char** argv, char** envp)
 }
 ```
 
+## Exploit
+
 We can use `LOGNAME` to print whatever value we want. We can ask it to gently give us the return value of `getflag` such as:
 ```bash
 level07@SnowCrash:~$ LOGNAME="\`getflag\`"

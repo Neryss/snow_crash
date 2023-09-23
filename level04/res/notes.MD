@@ -1,4 +1,4 @@
-## Level 04
+# Level 04
 
 `ls` -> we find a level04.pl (perl script)
 
@@ -16,7 +16,7 @@ sub x {
 x(param("x"));
 ```
 
-### Curl request
+## Exploit
 
 It seems we can send curl requests to the server and it will execute the `x` subroutine as this:
 

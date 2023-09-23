@@ -1,4 +1,4 @@
-## Level 11
+## BONUS: Level 11
 
 We found a single file [level11.lua](./level11.lua) containing a server accepting connections and asking for a password which will be hashed.
 
@@ -56,7 +56,7 @@ Erf nope..
 
 ### Other solution
 
-A simpler one we found later:
+Another solution we found later which doesn't use `wall`:
 
 ```bash
 level11@SnowCrash:~$ nc localhost 5151

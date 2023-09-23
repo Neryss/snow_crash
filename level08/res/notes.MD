@@ -40,6 +40,8 @@ We can pass the first test by giving it any argument, the second one indicates t
 
 So our objective is to somehow read the `token` file.
 
+## Exploit
+
 We can do so by creating a symlink to `token` and pass it to the program:
 
 ```bash

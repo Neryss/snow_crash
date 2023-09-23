@@ -1,4 +1,4 @@
-## Level12
+## BONUS: Level12
 
 We found a file, [level12.pl](./level12.pl)
 
@@ -20,6 +20,8 @@ But this is the interesting part:
 ```
 
 Here it executes a `egrep` with the argument we pass on.
+
+## Exploit
 
 We can create a file containing the command we want to be executed:
 

