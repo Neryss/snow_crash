@@ -4,7 +4,9 @@ So here's the final level, which doesn't contain anything, literaly.
 
 Which means that the only mean to get a token is to mess with `getflag` which is decompiled [here](./getflag_decomp.c).
 
-We will need to use `gdb` to get what we want from [level14](./getflag), so the first check we need to bypass is the `ptrace` check:
+We can't use the preload method here since the program also checks for it.
+
+We will need to use `gdb` to get what we want from [level14](./getflag), so the first check we need to bypass is the `ptrace` check since it "blocks us" from using GDB:
 
 ```c
 eax = ptrace (ebx, *(gs:0x14), 0, 0, 1, 0);
@@ -38,7 +40,7 @@ Dump of assembler code for function main:
    0x0804897a <+52>:    movl   $0x0,0x4(%esp)
    0x08048982 <+60>:    movl   $0x0,(%esp)
 >  0x08048989 <+67>:    call   0x8048540 <ptrace@plt>
-   0x0804898e <+72>:    test   %eax,%eax
+   0x0804898e <+72>:    test   %eax,%eax              #ptrace res check
    0x08048990 <+74>:    jns    0x80489a8 <main+98>
    0x08048992 <+76>:    movl   $0x8048fa8,(%esp)
    0x08048999 <+83>:    call   0x80484e0 <puts@plt>
@@ -117,21 +119,25 @@ Dump of assembler code for function main:
 >  0x08048afd <+439>:   call   0x80484b0 <getuid@plt>
    0x08048b02 <+444>:   mov    %eax,0x18(%esp)
    0x08048b06 <+448>:   mov    0x18(%esp),%eax
-   0x08048b0a <+452>:   cmp    $0xbbe,%eax
+   0x08048b0a <+452>:   cmp    $0xbbe,%eax            # getuid res check
    0x08048b0f <+457>:   je     0x8048ccb <main+901>
    0x08048b15 <+463>:   cmp    $0xbbe,%eax
 ---Type <return> to continue, or q <return> to quit---q
 Quit
+
+# We first create a breakpoint just after the ptrace check to modify its value
+
 (gdb) b *main+72
 Breakpoint 1 at 0x804898e
 (gdb) r
 Starting program: /bin/getflag
-
 Breakpoint 1, 0x0804898e in main ()
 (gdb) print $eax
 $1 = -1
 (gdb) set $eax=0
 (gdb) b *main+452
+
+# Then we will do the same for the UID check from `getuid()`
 Breakpoint 2 at 0x8048b0a
 (gdb) s
 Single stepping until exit from function main,
@@ -143,6 +149,8 @@ $2 = 2014
 (gdb) set $eax=3014
 (gdb) print $eax
 $3 = 3014
+
+# We can then step to the end of the program which will result in a tokan print!
 (gdb) s
 Single stepping until exit from function main,
 which has no line number information.
@@ -150,3 +158,7 @@ Check flag.Here is your token : 7QiHafiNa3HVozsaXkawuYrTstxbpABHD8CPnHJ
 0xb7e454d3 in __libc_start_main () from /lib/i386-linux-gnu/libc.so.6
 (gdb)
 ```
+
+## Token
+
+7QiHafiNa3HVozsaXkawuYrTstxbpABHD8CPnHJ
