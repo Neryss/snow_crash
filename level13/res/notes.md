@@ -73,7 +73,7 @@ your token is 2A31L79asukciNyi8uppkEuSx
 
 ### Preload
 
-Another solution which is also really powerful, is to forge our own `getuid()` function and use it to replace the one in the main program as such:
+Another solution, found by [agirona](https://github.com/PsyCowpathe), which is also really powerful, is to forge our own `getuid()` function and use it to replace the one in the main program as such:
 
 ```bash
 level13@SnowCrash:/var/crash$ cat inject.c
