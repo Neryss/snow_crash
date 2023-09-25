@@ -56,7 +56,7 @@ Erf nope..
 
 ### Other solution
 
-Another solution we found later which doesn't use `wall`:
+Another solution, [agirona](https://github.com/PsyCowpathe) found later which doesn't use `wall`:
 
 ```bash
 level11@SnowCrash:~$ nc localhost 5151

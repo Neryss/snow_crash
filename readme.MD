@@ -16,6 +16,27 @@ An introduction to admin sys security
 
 - [wireshark](https://www.wireshark.org/): for network analyze
 - [cutter.re](https://cutter.re/): free decompiler
+- [packet safari](https://app.packetsafari.com/): online packet analyzer
+- [dogbolt](https://dogbolt.org): online decompiler
+- [dcode](https://www.dcode.fr/): decipher tool
+
+## Useful commands
+
+```bash
+find / -user flag00 2> /dev/null  # find all files owned by a user
+find / -type f/d -user flag00 2> /dev/null  # find all files owned by a user and by type
+find / -type f/d -group flag00 2> /dev/null  # find all files owned by a group and by type
+find / -type f/d -perm flag00 2> /dev/null  # find files by rights
+find / -iname <filename> 2> /dev/null # find files by name
+
+find /-type f -exec bash -c 'test -r "$1" && echo "$1"' x {} \; 2> /dev/null # find all files readable by user
+
+find
+groups
+cat /etc/group
+
+getfacl # give additional permisions description
+```
 
 # Useful notes
 
